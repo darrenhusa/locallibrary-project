@@ -1,0 +1,8 @@
+#from obey the testing goat django tutorial/book
+db.sqlite3
+geckodriver.log
+virtualenv
+__pycache__
+*.pyc
+./static
+functional_tests/screendumps
