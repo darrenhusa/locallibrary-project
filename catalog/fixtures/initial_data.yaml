@@ -1,0 +1,25 @@
+- model: catalog.author
+  pk: 1
+  fields:
+    first_name: Wes
+    last_name: McKinney
+- model: catalog.author
+  pk: 2
+  fields:
+    first_name: Matthew
+    last_name: Kirk
+- model: catalog.author
+  pk: 3
+  fields:
+    first_name: Mark
+    last_name: Lutz
+- model: catalog.author
+  pk: 4
+  fields:
+    first_name: Jake
+    last_name: VanderPlas
+- model: catalog.author
+  pk: 5
+  fields:
+    first_name: Daniel
+    last_name: Chen
