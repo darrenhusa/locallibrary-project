@@ -1,25 +1,79 @@
-- model: catalog.author
+# initial_data.yaml
+
+# - model: catalog.genre
+#   pk: 1
+#   fields:
+#     name: Programming
+# - model: catalog.genre
+#   pk: 2
+#   fields:
+#     name: Data Science
+
+
+# - model: catalog.author
+#   pk: 1
+#   fields:
+#     first_name: Wes
+#     last_name: McKinney
+# - model: catalog.author
+#   pk: 2
+#   fields:
+#     first_name: Matthew
+#     last_name: Kirk
+# - model: catalog.author
+#   pk: 3
+#   fields:
+#     first_name: Mark
+#     last_name: Lutz
+# - model: catalog.author
+#   pk: 4
+#   fields:
+#     first_name: Jake
+#     last_name: VanderPlas
+# - model: catalog.author
+#   pk: 5
+#   fields:
+#     first_name: Daniel
+#     last_name: Chen
+
+# Books data
+- model: catalog.book
   pk: 1
   fields:
-    first_name: Wes
-    last_name: McKinney
-- model: catalog.author
-  pk: 2
-  fields:
-    first_name: Matthew
-    last_name: Kirk
-- model: catalog.author
-  pk: 3
-  fields:
-    first_name: Mark
-    last_name: Lutz
-- model: catalog.author
-  pk: 4
-  fields:
-    first_name: Jake
-    last_name: VanderPlas
-- model: catalog.author
-  pk: 5
-  fields:
-    first_name: Daniel
-    last_name: Chen
+    title: Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython 2nd Edition
+    author: 1
+    isbn:  978-1491957660
+    # summary: |
+    #   Get complete instructions for manipulating, processing, cleaning, and crunching datasets in Python. Updated for Python 3.6, the second edition of this hands-on guide is packed with practical case studies that show you how to solve a broad set of data analysis problems effectively. You’ll learn the latest versions of pandas, NumPy, IPython, and Jupyter in the process.
+    # genre: [2]
+
+# - model: catalog.book
+#   pk: 2
+#   fields:
+#     title: Thoughtful Machine Learning with Python: A Test-Driven Approach 2nd Edition
+#     author: 2 # FK
+#     isbn:  978-1491924136
+#     summary:
+#     Gain the confidence you need to apply machine learning in your daily work. With this practical guide, author Matthew Kirk shows you how to integrate and test machine learning algorithms in your code, without the academic subtext.
+#     Featuring graphs and highlighted code examples throughout, the book features tests with Python’s Numpy, Pandas, Scikit-Learn, and SciPy data science libraries. If you’re a software engineer or business analyst interested in data science, this book will help you
+#     genre: [2] #Many-to-Many
+#
+# - model: catalog.book
+#   pk: 3
+#   fields:
+#     title: Learning Python, 5th Edition
+#     author: 3 # FK
+#     isbn: 978-1449355739
+#     summary:
+#     Get a comprehensive, in-depth introduction to the core Python language with this hands-on book. Based on author Mark Lutz’s popular training course, this updated fifth edition will help you quickly write efficient, high-quality code with Python. It’s an ideal way to begin, whether you’re new to programming or a professional developer versed in other languages.
+#     genre: [1] #Many-to-Many
+#
+# - model: catalog.book
+#   pk: 4
+#   fields:
+#     title: Python Data Science Handbook: Essential Tools for Working with Data 1st Edition
+#     author: 4 # FK
+#     isbn:  978-1491912058
+#     summary:
+#     For many researchers, Python is a first-class tool mainly because of its libraries for storing, manipulating, and gaining insight from data. Several resources exist for individual pieces of this data science stack, but only with the Python Data Science Handbook do you get them all—IPython, NumPy, Pandas, Matplotlib, Scikit-Learn, and other related tools.
+#     genre: [2]  #Many-to-Many
